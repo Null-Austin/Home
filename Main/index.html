@@ -1,13 +1,90 @@
-<!doctype html>
-    <html>
-        <style>body{background-color: black; color: gray} h1{text-align: center;} div.main{border: 2px solid red; border-radius: 5px;} div.main1{border: 2px solid red; border-radius: 5px;} h3.a{text-align:center;}</style>
-        <head>
-            <title>Hello from a far!</title>
-        </head>
-        <body>
-            <h1>Welcome!</h1>
-            <div class="main">
-                <p>Who am i? i am an coder who love Python, C#, And lua, what have i done? i made an website for my fathers carpet cleaning buisness a while back, i forgot a lot of web dev skills though, if you could not tell. lol. I love Blender also! and thats most of it!</p></div><p></p>
-            <div class="main1"><h3 class="a">What have i created?</h3><p></p><p><a href="https://github.com/AustinProGammer/surface-area-CS" target="_blank">surface areas repo?!</a></p>
-        </body> 
-    </html>
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+    <meta charset=“UTF-8”>
+    <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+    <title>AustinProGammer’s Portfolio</title>
+    <style>
+        body {
+            font-family: ‘Courier New’, Courier, monospace;
+            background-color: #000;
+            color: #ff0000;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        .about, .content {
+            margin-bottom: 40px;
+            padding: 15px;
+            color: #ff0000;
+        }
+
+        .project {
+            background: #000;
+            border: 2px solid #ff0000;
+            margin: 20px 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project img {
+            width: 50%;
+            border-radius: 50%;
+            border: 4px solid #ff0000;
+            margin-top: 15px;
+        }
+
+        h1, h2, h3, p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #ff0000;
+            text-decoration: none;
+            border: 1px solid #ff0000;
+            padding: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ff0000;
+            color: #000;
+        }
+
+        .about h2, .about p, a {
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .project img {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class=“container”>
+        <div class=“about”>
+            <h2>About Me</h2>
+            <p>Hello! I’m AustinProGammer, a software engineer with a passion for developing innovative software solutions. Currently diving deep into Python and C#, I love exploring the intersection of technology and creative problem solving. Welcome to my portfolio!</p>
+        </div>
+        <div class=“content”>
+            <div class=“project”>
+                <h3>Surface Area Calculator</h3>
+                <p>C#</p>
+                <p>This project is a Surface Area Calculator developed in C#. It exemplifies my approach to tackling mathematical problems with efficient and reliable code.</p>
+                <a href=“https://github.com/AustinProGammer/surface-area-CS” target=“_blank”>View Project on GitHub</a>
+            </div>
+            <!-- Add more projects in a similar pattern -->
+        </div>
+    </div>
+</body>
+</html>
