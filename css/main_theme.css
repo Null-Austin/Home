@@ -1,0 +1,19 @@
+
+h1 {
+    text-align: center;
+}
+body {
+    background-color: black;
+    color: white;
+    background-size: 2%;
+}
+.backbody {
+    background-color: #760000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+}
+a{
+    color: #b7b7b7;
+}
