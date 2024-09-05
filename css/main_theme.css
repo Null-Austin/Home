@@ -17,3 +17,8 @@ body {
 a{
     color: #b7b7b7;
 }
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,4 @@
+python -m  http.server
+
+git pull --rebase
+git push
