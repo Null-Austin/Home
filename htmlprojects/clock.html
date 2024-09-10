@@ -52,10 +52,13 @@
             var timeString = hours + ":" + minutes + ":" + seconds;
             document.getElementById("clock").innerText = timeString;
             document.getElementById("tz").innerText=Intl.DateTimeFormat().resolvedOptions().timeZone;
+            document.title=timeString
         }
         setInterval(updateClock, 1000);
         updateClock();
     </script>
+
     <footer>This clock, is built off one of my projects, which can be found <a href="https://github.com/Null-Austin/flask-clock">here</a></footer>
+
 </body>
 </html>
