@@ -14,6 +14,11 @@ body {
     margin: auto;
     width: 50%;
 }
+.page-footer {
+    background-color: rgb(75 70 74);
+    color: #fff;
+    padding: 20px;
+  }
 a{
     color: #b7b7b7;
 }

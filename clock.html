@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clock</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #clock {
+            font-size: 6em;
+        }
+        body {
+            background-color: #567;
+        }
+        #demotext {
+            color: #e0dfdc;
+            background-color: #567;
+            letter-spacing: .1em;
+            text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+        }
+        p {
+            color: #e0dfdc;
+            text-align: center;
+            font-size: 32px;
+        }
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(78, 93, 108);
+            color: #e0dfdc;
+            text-align: left;
+            font-size: 1.5em;
+        }
+        a {
+            color: #e0dfdc;
+        }
+    </style>
+</head>
+<body id="fs">
+
+    <div id="demotext"><h1 id="clock">hey, if you see this, please enable js!</h1></div>
+    <div id="demotext"><p id="tz">for this to work, if it is, then i believe, somethings messed up.  srry. not me. prob.</p></div>
+
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            var timeString = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("clock").innerText = timeString;
+            document.getElementById("tz").innerText=Intl.DateTimeFormat().resolvedOptions().timeZone;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+    <footer>This clock, is built off one of my projects, which can be found <a href="https://github.com/Null-Austin/flask-clock">here</a></footer>
+</body>
+</html>
