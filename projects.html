@@ -1,66 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Null-Austin/public-assets/main/Null-Austin.jpeg">
     <title>Projects</title>
     <link rel="stylesheet" href="/css/main_theme.css">
     <link rel="stylesheet" href="/css/projects_theme.css">
+    <style>
+        .projects {
+            margin-bottom: 20px; /* Space below each project div */
+        }
+        .projects img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        function addHtml(parent, elem) {
+            parent.appendChild(elem);
+        }
+    
+        function newProject(name, image, url) {
+            const group = document.createElement('div');
+            const link = document.createElement('a');
+            const p = document.createElement('p');
+            const line = document.createElement('hr');
+            const img = document.createElement('img');
+                
+            group.className = 'projects';
+    
+            link.href = url;
+    
+            p.innerText = name;
+            p.className = 'toptext';
+    
+            img.src = image;
+            img.alt = name;
+    
+            line.width = '100%';
+            line.size = '2';
+    
+            group.appendChild(link);
+            link.appendChild(p);
+            link.appendChild(line);
+            link.appendChild(img);
+    
+            document.querySelector('.backbody').appendChild(group);
+            document.querySelector('.backbody').appendChild(document.createElement('p')); // Add spacing <p> tag
+            console.log('made new project')
+        }
+    
+    </script>
 </head>
 <body>
     <div class="backbody">
         <h1>Some of my hard-spent projects</h1>
-        <p>goofy project fr fr</p>
-        <p>enjoy <s>or else</s>! Love or hate them, idc, i do care about suggestions though. <a href="/contact.html">contact me here</a></p>
+        <p>Goofy project fr fr</p>
+        <p>Enjoy <s>or else</s>! Love or hate them, idc, I do care about suggestions though. <a href="/contact.html">Contact me here</a></p>
 
+        <script>
+            newProject('Dice.py', '/images/projects/dice.py.png', 'https://github.com/Null-Austin/Dice');
+            newProject('Russian.py', '/images/projects/russian.py.png', 'https://github.com/Null-Austin/russian-roulette-python');
+            newProject('index.html', '/images/projects/home.png', 'https://github.com/Null-Austin/Home');
+            newProject('Url-Shortner.py', '/images/projects/Url-short.png', 'https://github.com/Null-Austin/url-shortener');
+            newProject('Clock', '/images/projects/clock.png', '/htmlprojects/clock.html');
+        </script>
 
-        <div class="projects">
-            <a href="https://github.com/Null-Austin/Dice">
-                <p class="toptext">Dice.py</p>
-                <hr width="100%" size="2">
-                <img src="/images/projects/dice.py.png" class="center">
-            </a>
-        </div>
-        <p></p>
-
-        <div class="projects">
-            <a href="https://github.com/Null-Austin/russian-roulette-python">
-                <p class="toptext">Russian.py</p>
-                <hr width="100%" size="2">
-                <img src="/images/projects/russian.py.png" class="center">
-            </a>
-        </div>
-        <p></p>
-
-        <div class="projects">
-            <a href="https://github.com/Null-Austin/Home">
-                <p class="toptext">index.html</p>
-                <hr width="100%" size="2">
-                <img src="/images/projects/home.png" class="center">
-            </a>
-        </div>
-        <p></p>
-
-        <div class="projects">
-            <a href="https://github.com/Null-Austin/url-shortener">
-                <p class="toptext">Url-Shortner.py</p>
-                <hr width="100%" size="2">
-                <img src="/images/projects/Url-short.png" class="center">
-                
-            </a>
-        </div>
-        <p></p>
-
-        <div class="projects">
-            <a href="/htmlprojects/clock.html">
-                <p class="toptext">Url-Shortner.py</p>
-                <hr width="100%" size="2">
-                <img src="/images/projects/clock.png" class="center">
-                
-            </a>
-        </div>
-        <p></p>
-
-        
     </div>
 </body>
 </html>
+
