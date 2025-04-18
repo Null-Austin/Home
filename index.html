@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Null-Austin/public-assets/main/Null-Austin.jpeg">
-    <title>Hello!</title>
-    <link rel="stylesheet" href="/css/main_theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Null-Austin</title>
+    <style>
+        /* just some setup + fonts. i dont think they are websafe, but who really cares in modern computers? */
+        body{
+            scroll-behavior: smooth
+        }
+        @import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Noto+Sans+SC:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        body,html{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+        }
+        .np{
+            font-family: "National Park", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .rc{
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .rm{
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .ns{
+            font-family: "Noto Sans SC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        a.black{
+            color: black;
+        }
+
+
+        /* general site */
+        footer{
+            padding: 3px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.616);
+            width: 100%;
+        }
+        body{
+            background-color: skyblue;
+        }
+        #user-info{
+            width: 85%;
+            margin: 0 auto;
+            padding: 5px;
+            /*background-color: rgba(0, 0, 0, 0.055);*/
+            display: flex;
+        }
+        #user-info>span{
+            font-size: 100px;
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+        #pfp{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px darkslategray solid;
+        }
+        hr{
+            width: 80%;
+            border: 1px solid darkblue;
+        }
+        p.data{
+            width: 95%;
+            text-align: center;
+            font-size: 20px;
+            margin: 0 auto;
+            padding-top: 5px;
+        }
+    </style>
 </head>
 <body>
-    <div class="backbody">
-        <h1>Welcome!</h1>
-        <p>Hello, i am <a href="https://github.com/Null-Austin">Austin</a>, and im working towards Software development, or fancy word incoming, Software engineering! lol. I love tech, computers, devices, raspberrys, and last of all, sprite. Sorryyyy off brand people. Anyways, i love Spicy food, and learning, math is a favorite subject, im currently in algebra. And i try to be selfless. As always.</p>
-        <p><b>be warned, dont get on my bad side...</b></p>
-        <p>No need to worry! i am a wikipedian? ya. And another thing about me, is i enjoy talking, and as a favor back, will listen. For further info please refer to <a href="/contact.html">here</a>. And also, if you like any of my projects, come look at the rest of <a href="/projects.html">them</a>!</p>
-    </div>
+    <div id="user-info"><img id="pfp" src="https://avatars.githubusercontent.com/u/133458852" alt="github profile picture"><span id="username" class="np">Null-Austin</span></div>
+    <footer><a class="rc black" href="https://github.com/null-Austin/">Github.com</a> &bull; <a class="np black" href="https://paypal.me/AustinM874/3">Donate</a></footer>
+    <hr>
+    <p class="data np">Hey! Im the creator of this wonderful website. One of the kindest people you will ever meet... not to brag <sub>*wink wink*</sub>. Im a fantastic archer, and a good student. Im always up for a challege! And im dedicated, I spend a lot of my time with others helping them, and I love everything. Trust me, I cant even be mean to someone I dislike.</p>
 </body>
 </html>
